@@ -30,5 +30,6 @@ composer require c78/flarum-ext-mediaembed
 # 开发参考
 
 [https://github.com/s9e/flarum-ext-mediaembed/](https://github.com/s9e/flarum-ext-mediaembed/)
+
 [https://github.com/s9e/TextFormatter/blob/master/docs/Plugins/MediaEmbed/Add_custom.md](https://github.com/s9e/TextFormatter/blob/master/docs/Plugins/MediaEmbed/Add_custom.md)
 

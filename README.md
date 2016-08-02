@@ -27,6 +27,10 @@ composer require c78/flarum-ext-mediaembed
 - 如果你是https的站点，那么你应该清楚只能显示支持https的 :-)。
 - 有问题或提交新的站点支持？请提交issues :-)。
 
+# 支持
+
+- [https://www.e7ko.com/](https://www.e7ko.com/)
+
 # 开发参考
 
 [https://github.com/s9e/flarum-ext-mediaembed/](https://github.com/s9e/flarum-ext-mediaembed/)

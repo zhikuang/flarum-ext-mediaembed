@@ -1,0 +1,37 @@
+{
+    "name": "c78/flarum-ext-mediaembed",
+    "description": "自动识别第三方网站的媒体（图片、视频、音频）并内嵌到 Flarum 中。",
+    "type": "flarum-extension",
+    "keywords": ["music","media","embed","video","bilibili","youku","ku6","tucao","tudou","neteasemusic","acfun","qq","mgtv"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "c78",
+            "email": "admin@e7ko.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/c78/flarum-ext-mediaembed/issues",
+        "source": "https://github.com/c78/flarum-ext-mediaembed"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "c78\\MediaEmbed\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "自动识别媒体",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#abcdef"
+            }
+        }
+    }
+}

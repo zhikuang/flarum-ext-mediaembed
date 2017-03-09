@@ -1,9 +1,9 @@
 {
     "name": "c78/flarum-ext-mediaembed",
-    "description": "自动识别第三方网站的媒体（图片、视频、音频）并内嵌到 Flarum 中。",
+    "description": "自动识别第三方网站的媒体（图片、视频、音频）并内嵌到 Flarum 中。 （在原版本基础上支持智矿论坛的功能）",
     "type": "flarum-extension",
     "keywords": ["music","media","embed","video","bilibili","youku","ku6","tucao","tudou","neteasemusic","acfun","qq","mgtv"],
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT",
     "authors": [
         {

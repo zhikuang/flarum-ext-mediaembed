@@ -126,6 +126,19 @@ function subscribe(Dispatcher $events)
                     ]
                 ]
             );
+
+             $event->configurator->MediaEmbed->add(
+                'wlxy',
+                [
+                    'host'      => 'wlxy.zhikuang.org',
+                    'extract'   => "!wlxy.zhikuang.org/backtest/(?'id'\\d+)!",
+                    'iframe'    => [
+                        'width' => 760,
+                        'height' => 450,
+                        'src' => '//wlxy.zhikuang.org/backtest/{@id}'
+                    ]
+                ]
+            );
             (new MediaPack)->configure($event->configurator);
         }
     );

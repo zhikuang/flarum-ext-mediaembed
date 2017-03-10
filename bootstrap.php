@@ -131,11 +131,11 @@ function subscribe(Dispatcher $events)
                 'wlxy',
                 [
                     'host'      => 'wlxy.zhikuang.org',
-                    'extract'   => "!wlxy.zhikuang.org/backtest/(?'id'\\d+)!",
+                    'extract'   => "!wlxy\\.zhikuang\\.org/backtest/(?'id'\\d+)!",
                     'iframe'    => [
                         'width' => 760,
                         'height' => 450,
-                        'src' => '//wlxy.zhikuang.org/backtest/{@id}'
+                        'src' => 'http://wlxy.zhikuang.org/backtest/{@id}'
                     ]
                 ]
             );

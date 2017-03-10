@@ -131,7 +131,7 @@ function subscribe(Dispatcher $events)
                 'zhikuangshare',
                 [
                     'host'      => 'share.zhikuang.org',
-                    'extract'   => "!share\\.zhikuang\\.org/backtest?platform=(?'platform'\\w+)&id=(?'id'\\d+)!",
+                    'extract'   => "!share\\.zhikuang\\.org/backtest\\?platform=(?'platform'\\w+)&id=(?'id'\\d+)!",
                     'iframe'    => [
                         'width' => 760,
                         'height' => 450,
@@ -148,7 +148,7 @@ function subscribe(Dispatcher $events)
                     'extract' => "!test\\.com!",
                     'flash'  => [
                         'width'  => 760,
-                        'height' => 450,
+                        'height' => 450, 
                         'src'    => 'http://test.com'
                     ]
 

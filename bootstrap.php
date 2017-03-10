@@ -128,7 +128,7 @@ function subscribe(Dispatcher $events)
             );
 
              $event->configurator->MediaEmbed->add(
-                'wlxy',
+                'zhikuangshare',
                 [
                     'host'      => 'share.zhikuang.org',
                     'extract'   => "!share\\.zhikuang\\.org/backtest?platform=(?'platform'\\w+)&id=(?'id'\\d+)!",
@@ -137,6 +137,21 @@ function subscribe(Dispatcher $events)
                         'height' => 450,
                         'src' => 'http://share.zhikuang.org/backtest?platform={@platform}&id={@id}'
                     ]
+                ]
+            );
+
+
+             $event->configurator->MediaEmbed->add(
+                'test',
+                [
+                    'host'    => 'test.com',
+                    'extract' => "!test\\.com!",
+                    'flash'  => [
+                        'width'  => 760,
+                        'height' => 450,
+                        'src'    => 'http://test.com'
+                    ]
+
                 ]
             );
             (new MediaPack)->configure($event->configurator);

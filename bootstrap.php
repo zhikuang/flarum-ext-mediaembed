@@ -127,7 +127,7 @@ function subscribe(Dispatcher $events)
                 ]
             );
 
-             $event->configurator->MediaEmbed->add(
+             $event->$configurator->MediaEmbed->add(
                 'zhikuangshare',
                 [
                     'host'      => 'share.zhikuang.org',
@@ -139,21 +139,7 @@ function subscribe(Dispatcher $events)
                     ]
                 ]
             );
-
-
-             $event->configurator->MediaEmbed->add(
-                'test',
-                [
-                    'host'    => 'test.com',
-                    'extract' => "!test\\.com!",
-                    'flash'  => [
-                        'width'  => 760,
-                        'height' => 450, 
-                        'src'    => 'http://test.com'
-                    ]
-
-                ]
-            );
+             
             (new MediaPack)->configure($event->configurator);
         }
     );

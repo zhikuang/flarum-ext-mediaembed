@@ -130,12 +130,12 @@ function subscribe(Dispatcher $events)
              $event->configurator->MediaEmbed->add(
                 'wlxy',
                 [
-                    'host'      => 'wlxy.zhikuang.org',
-                    'extract'   => "!wlxy\\.zhikuang\\.org/backtest/(?'id'\\d+)!",
+                    'host'      => 'share.zhikuang.org',
+                    'extract'   => "!share\\.zhikuang\\.org/backtest?platform=(?'platform'\\w+)&id=(?'id'\\d+)!",
                     'iframe'    => [
                         'width' => 760,
                         'height' => 450,
-                        'src' => 'http://wlxy.zhikuang.org/backtest/{@id}'
+                        'src' => 'http://share.zhikuang.org/backtest?platform={@platform}&id={@id}'
                     ]
                 ]
             );

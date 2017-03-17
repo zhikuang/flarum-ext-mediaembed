@@ -131,11 +131,24 @@ function subscribe(Dispatcher $events)
                 'zhikuangshare',
                 [
                     'host'      => 'share.zhikuang.org',
-                    'extract'   => "!share\\.zhikuang\\.org/backtest\\?platform=(?'platform'\\w+)&id=(?'id'\\d+)!",
+                    'extract'   => "!share\\.zhikuang\\.org/backtest\\?platform=(?'platform'\\w+)&id=(?'id'\\[^/]+)!",
                     'iframe'    => [
                         'width' => 760,
                         'height' => 450,
                         'src' => 'http://share.zhikuang.org/backtest?platform={@platform}&id={@id}'
+                    ]
+                ]
+            );
+
+             $event->configurator->MediaEmbed->add(
+                'zhikuangshare-TEST',
+                [
+                    'host'      => '127.0.0.1:8001',
+                    'extract'   => "!127\\.0\\.0\\.1:8001/backtest\\?platform=(?'platform'\\w+)&id=(?'id'\\[^/]+)!",
+                    'iframe'    => [
+                        'width' => 760,
+                        'height' => 450,
+                        'src' => 'http://127.0.0.1:8001/backtest?platform={@platform}&id={@id}'
                     ]
                 ]
             );

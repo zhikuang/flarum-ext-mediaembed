@@ -143,7 +143,7 @@ function subscribe(Dispatcher $events)
              $event->configurator->MediaEmbed->add(
                 'zhikuangshareTEST',
                 [
-                    'host'      => '127.0.0.1:8001',
+                    'host'      => '127.0.0.1',
                     'extract'   => "!127\\.0\\.0\\.1:8001/backtest\\?platform=(?'platform'\\d+)&id=(?'id'[^/]+)!",
                     'iframe'    => [
                         'width' => 760,

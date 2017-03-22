@@ -153,6 +153,9 @@ function subscribe(Dispatcher $events)
                 ]
             );
 
+             // 在文章尾部追加logo png文件，用于微信分享的默认图片显示
+             $event-$configurator->Preg->replace("#$#", "<div style='width:0px;height:0px;overflow:hidden'><img src='http://on7cnqe42.bkt.clouddn.com/zhikuang_logo512.png' /></div>")
+
             (new MediaPack)->configure($event->configurator);
         }
     );
